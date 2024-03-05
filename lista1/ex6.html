@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script>
+        const numVendidos = parseInt(prompt("Digite quantos carros foram vendidos pelo vendedor:"));
+        const valorTotalVendas = parseFloat(prompt("Digite o valor total das vendas realizadas pelo vendedor:"));
+        const salarioFixo = parseFloat(prompt("Digite o salario fixo do vendedor:"));
+        const valorPorCarro = parseFloat(prompt("Digite o valor da comissão:"));
+        const comissaoFixa = numVendidos * valorPorCarro;
+        const comissaoVendas = valorTotalVendas * 0.05;
+        const salarioFinal = salarioFixo + comissaoFixa + comissaoVendas;
+        document.write("O salario final é: ", salarioFinal)
+
+    </script>
 </head>
 <body>
     

@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script>
+        
+        const fabrica = parseFloat(prompt("Digite o custo de fabrica do carro:"));
+        const distribuidorP = parseFloat(prompt("Digite o percentual do distribuidor:"));
+        const impostos = parseFloat(prompt("Digite o valor dos impostos:"));
+        const distribuidorC = fabrica * (distribuidorP / 100);
+        const total = fabrica + distribuidorC + impostos;
+document.write("O custo total do carro é: ",total);
+
+    </script>
 </head>
 <body>
     
